@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Жүректен жүрекке — Қосылу</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-bg">
+    <div class="card">
+      <div class="left-col">
+        <div class="logo-row">
+          <div class="heart-icon">❤</div>
+          <div>
+            <h3 class="project-title">Жүректен жүрекке</h3>
+            <p class="subtitle">Қайырымдылық жобa — бірге көмектесейік</p>
+          </div>
+        </div>
+
+        <div class="big-icon">
+          <!-- Можно заменить на картинку -->
+          <div class="image-box">
+            <div class="heart-big">❤</div>
+          </div>
+        </div>
+
+        <h2 class="left-title">Жүректен жүрекке</h2>
+        <p class="left-desc">Біз біргеміз — кішкентай көмектің үлкен өзгеріс әкеледі. Қосыласың ба?</p>
+      </div>
+
+      <div class="right-col">
+        <h2 class="ask-title">Қосылғың келе ме?</h2>
+        <div class="buttons">
+          <button id="joinBtn" class="btn primary">Иә — Қосыламын</button>
+          <button id="laterBtn" class="btn">Жоқ — Кейін</button>
+        </div>
+
+        <p class="note">Иә бассаңыз — қысқа форма шығады. Мәліметтер Google Sheets-ке сақталады.</p>
+
+        <!-- Форма, скрыта по умолчанию -->
+        <form id="joinForm" class="join-form hidden" autocomplete="off">
+          <label>Аты (First name)
+            <input type="text" id="fname" name="fname" required maxlength="80" placeholder="Атыңыз">
+          </label>
+
+          <label>Тегі (Last name)
+            <input type="text" id="lname" name="lname" required maxlength="80" placeholder="Тегіңіз">
+          </label>
+
+          <label>Сынып (Class / Grade)
+            <input type="text" id="grade" name="grade" maxlength="30" placeholder="Сынып">
+          </label>
+
+          <label>Мақсаты (Purpose)
+            <textarea id="purpose" name="purpose" rows="4" maxlength="500" placeholder="Қысқаша мақсат пен ниетіңіз"></textarea>
+          </label>
+
+          <div class="form-row">
+            <button id="submitBtn" type="submit" class="btn primary">Жіберу</button>
+            <button id="cancelBtn" type="button" class="btn">Бас тарту</button>
+          </div>
+
+          <p id="formMessage" class="form-message"></p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
